@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html class="no-js" ng-app="depee">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>demo</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,maxinum-scale=1,user-scalable=no">
+	<!-- build:css({.tmp,app}) styles/app.css -->
+    <link rel="stylesheet" href="styles/app.css" />
+    <!-- endbuild -->
+</head>
+<body class="flex-box">
+	<!--[if lt IE 7]>
+		<p class="browsehappy">你正在使用 <strong>废旧</strong> 的浏览器。 为了更好的用户体验，请 <a href="http://browsehappy.com/">更新你的浏览器</a> 。</p>
+    <![endif]-->
+
+    <header id="header" class="header">
+    	<div class="container header-box">
+    		<div class="header-left">
+	    		<h1 class="logo"><img src="images/logo.png" alt="logo"/></h1>
+	    	</div>
+	    	<div class="header-center">
+	    		<a href="">
+	    			<i class="fa fa-comment"></i>
+	    			<span>询价</span>
+	    		</a>
+	    		<a href="">
+	    			<i class="fa fa-upload"></i>
+	    			<span>定制</span>
+	    		</a>
+	    		<a href="">
+	    			<i class="fa fa-shopping-cart"></i>
+	    			<span>订单</span>
+	    		</a>
+	    	</div>
+	    	<div class="header-right">
+	    		<button type="button" class="btn btn-sm btn-primary">设置</button>
+	    		<button type="button" class="btn btn-sm btn-primary">保存</button>
+	    		<button type="button" class="btn btn-sm btn-danger">退出</button>
+	    	</div>
+    	</div>
+    </header><!-- /header -->
+
+    <section class="flex-body mainContent" ui-view>
+    	<!-- <div class="container"> -->
+	    	<aside class="m-left">
+	    		<ul class="tab-bar">
+					<li data-id="panel1" class="active">tab1</li>
+					<li data-id="panel2">tab2</li>
+					<li data-id="panel3">tab3</li>
+				</ul>
+				<div id="panel1" class="tab-panel">
+					panel 1
+				</div>
+				<div id="panel2" class="tab-panel">
+					panel 2
+				</div>
+				<div id="panel3" class="tab-panel">
+					panel 3
+				</div>
+	    	</aside>
+
+	    	<div class="m-content"></div>
+
+	    	<aside class="m-right">
+	    		
+	    	</aside>
+    	<!-- </div> -->
+    </section>
+	
+    <footer class="footer">
+    	<div class="container">
+    		<p>大皮工作室</p>
+    	</div>
+    </footer>
+	
+
+	<!-- build:js(.) scripts/oldieshim.js -->
+    <!--[if lt IE 9]>
+    <script src="/bower_components/es5-shim/es5-shim.js"></script>
+    <script src="/bower_components/json3/lib/json3.js"></script>
+    <![endif]-->
+    <!-- endbuild -->
+
+	<!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/fastclick/lib/fastclick.js"></script>
+    <script src="/bower_components/angular/angular.js"></script>
+    <script src="/bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="/bower_components/angular-resource/angular-resource.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap.js"></script>
+    <script src="/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js({.tmp,app}) scripts/app.js -->
+    <script src="scripts/app.js" type="text/javascript"></script>
+    <!-- endbuild -->
+</body>
+</html>

@@ -1,0 +1,46 @@
+{
+  "name": "depee",
+  "authors": [
+    "谢俏云 <xieqiaoyun258@pingan.com.cn>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [
+    "amd",
+    "es6",
+    "globals",
+    "node"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "overrides": {
+    "font-awesome": {
+      "main": [
+        "font-awesome/fonts/**/*"
+      ]
+    },
+    "bootstrap-sass-official": {
+      "main": [
+        "assets/fonts/**/*"
+      ]
+    }
+  },
+  "dependencies": {
+    "jquery": "^2.2.0",
+    "fastclick": "^1.0.6",
+    "angular": "~1.5.0",
+    "angular-cookies": "^1.5.0",
+    "angular-resource": "^1.5.0",
+    "font-awesome": "^4.6.2",
+    "bootstrap-sass": "^3.3.6",
+    "angular-ui-router": "^0.2.18"
+  }
+}
